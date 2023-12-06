@@ -1,0 +1,47 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="siejka" cols="80" rows="20" readonly>
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <script>
+    function Samochod(nazwa_k, pojemnosc_k, rok_produkcji_k, max_predkosc_k, masa_k) 
+    {
+      this.nazwa = nazwa_k;
+      this.pojemnosc = pojemnosc_k;
+      this.rok_produkcji = rok_produkcji_k;
+      this.max_predkosc = max_predkosc_k;
+      this.masa = masa_k;
+    }
+    Samochod.prototype.wypisz = function () {
+      alert(this.nazwa + ', ' + this.pojemnosc + ', ' + this.rok_produkcji + ', ' + this.max_predkosc + ', ' + this.masa);
+    };
+    var samochod1 = new Samochod("Fiat 126p", "643 cm³", "1972", "110 - 115.7 km/h", "630 kg"); 
+    var samochod2 = new Samochod("Syrena", "843 cm³", "1957", "99 km/h", "148 kg");
+    samochod1.wypisz(); 
+    samochod2.wypisz();
+    document.write("<center>Dostęp do właściwości:<br>");
+    document.write("Samochód 1: Syrena, 843 cm³, 1957, 99 km/h, 148 kg</center>");
+    </script>
+    </head>
+    <body>
+    <br>
+    Mateusz Kuśmierski 2P
+    </body>
+    </html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

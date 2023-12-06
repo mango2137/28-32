@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var samochód_wyswietl_kusmierski = {
+nazwa: 'Fiat 126, Maluch',
+pojemnosc: '643 cm³',
+rok_produkcji: '1972',
+max_perdkosc: '110 – 115,7 km/h',
+masa: '630 kg',
+pokaz: function ()
+{
+document.write("<center>" + this.nazwa + ',  ' + this.pojemnosc + ', ' + this.rok_produkcji + ', ' + this.max_perdkosc + ", " + this.masa + "</center>")
+}
+}
+
+samochód_wyswietl_kusmierski.pokaz();
+samochód_wyswietl_kusmierski.wymiary='3109/1377/1340';
+samochód_wyswietl_kusmierski.wypisz=function() {alert('Wymiary: ' + this.wymiary + 'mm')}
+samochód_wyswietl_kusmierski.wypisz();
+</script>
+</head>
+<body style="background: linear-gradient(to bottom, cyan 0%, violet 50%, rgb(116, 95, 165)) 100%;">
+<br><center>
+programowanie obiektowe
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="siejka" cols="80" rows="20" readonly>
+<html>
+<head>
+<script type="text/javascript">
+
+var samochód_wyswietl_kusmierski = {
+nazwa: 'Fiat 126, Maluch',
+pojemnosc: '643 cm³',
+rok_produkcji: '1972 r.',
+max_perdkosc: '110 – 115,7 km/h',
+masa: '630 kg',
+pokaz: function ()
+{
+document.write("<center>" + this.nazwa + ',  ' + this.pojemnosc + ', ' + this.rok_produkcji + ', ' + this.max_perdkosc + ", " + this.masa + "</center>")
+}
+}
+samochód_wyswietl_kusmierski.pokaz();
+</script>
+</head>
+<body style="background: linear-gradient(to bottom, cyan 0%, violet 50%, rgb(116, 95, 165)) 100%;"><center>
+<br>Mateusz Kuśmierski
+</body>
+</html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
